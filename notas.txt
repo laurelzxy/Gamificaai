@@ -1,0 +1,16 @@
+Seletores - Seleciona elementos para estilizar 
+Seletor por tag - Seleciona todos os elementos com a tag
+
+*/
+
+div {
+    height: 5000px;
+    width: 200px;
+    background-color: blue;
+    border: solid 8px black;
+}
+
+/* Seletor por classe - seleciona todos os elementos com as classe */
+.caixa-verde {
+        background-color: darkgreen;
+}
