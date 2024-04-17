@@ -609,7 +609,7 @@ h2{
     }
 
     .banner {
-        background-size: 24px;
+        background-size: cover;
     }
 
     .conteudo-banner p {
