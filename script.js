@@ -29,3 +29,53 @@ window.onresize = () => {
     iconeX.style.display = "inline"
     iconeBarras.style.display = "none"
 }
+
+// functionção carrosel
+
+let slides = [
+    'primeiro-banner' ,
+    'segundo-banner' ,
+    'terceiro-banner'
+ ]
+
+ 
+ let slideAtual = 0 
+
+ let numeroSlides = slides.length
+
+let banner = document.querySelector(".banner")
+
+banner.classList.add(slides[0])
+
+const mostrarProximoSlide = () => {
+    banner.classList.remove(slides[slideAtual])
+
+    // numeroSlides = 3
+    // estou no ultimo 2
+
+    if(slideAtual < 2) {
+        slideAtual ++
+    }else {
+        slideAtual = 0
+    }
+
+    
+    
+    
+    banner.classList.add(slides[slideAtual])
+    
+    
+}
+
+const mostrarSlideAnterior = () => {
+    
+    banner.classList.remove(slides[slideAtual ])
+    if(slideAtual > 0) {
+        slideAtual --
+    }else {
+        slideAtual = numeroSlides - 1
+    }
+    
+''
+    banner.classList.add(slides[slideAtual])
+}
